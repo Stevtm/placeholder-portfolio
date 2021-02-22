@@ -13,6 +13,7 @@ html {
 /* main content styles */
 main {
     display: flex;
+    flex: 30%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
