@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -19,6 +20,24 @@ main {
     height: 100vh;
 }
 
-.links {
+.title {
+    margin-right: 200px;
+    padding: 20px;
+}
 
+.title h1 {
+    font-size: 40px;
+}
+
+.title h2 {
+    padding-top: 10px;
+}
+
+.links {
+    margin-right: 200px;
+    padding: 0px 20px 20px 20px;
+}
+
+.links a {
+    padding: 0 20px;
 }
