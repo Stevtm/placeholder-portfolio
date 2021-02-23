@@ -1,4 +1,4 @@
-/* general page styles */
+/* GENERAL PAGE STYLES */
 :root {
     --primary-color: #627a56;
     --secondary-color: #5c567a;
@@ -26,7 +26,7 @@ html {
     transition: color 0.5s;
 }
 
-/* main content styles */
+/* MAIN CONTENT STYLES */
 main {
     display: flex;
     flex: 30%;
@@ -45,8 +45,9 @@ main {
     position: relative;
     width: 80px;
     height: 80px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     margin-right: 20px;
+    animation-delay: 1s;
 }
 
 .lds-roller div {
@@ -61,7 +62,7 @@ main {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: black;
+    background: var(--primary-color);
     margin: -4px 0 0 -4px;
 }
 
