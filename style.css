@@ -1,4 +1,9 @@
 /* general page styles */
+:root {
+    --primary-color: #627a56;
+    --secondary-color: #5c567a;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +13,17 @@
 
 html {
     background-color: #Faf8f2;
+}
+
+.hovered {
+    color: var(--primary-color);
+    transition: color 0.5s;
+}
+
+.hovered:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color 0.5s;
 }
 
 /* main content styles */
@@ -30,6 +46,7 @@ main {
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .lds-roller div {
@@ -132,25 +149,30 @@ main {
 
 /* CONTENT SECTION STYLES */
 /* title content styles */
-
 .title {
     margin-right: 200px;
     padding: 20px;
 }
 
 .title h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .title h2 {
     padding-top: 10px;
 }
 
+/* links content styles */
 .links {
     margin-right: 200px;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 0;
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 .links a {
     padding: 0 20px;
+    text-decoration: none;
+    color: var(--primary-color)
 }
