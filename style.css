@@ -161,6 +161,15 @@ main {
 
 .title h2 {
     padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title h1 span a {
+    text-decoration: none;
+}
+
+.title h2 span a {
+    text-decoration: none;
 }
 
 /* links content styles */
@@ -169,7 +178,6 @@ main {
     padding: 0px 20px 20px 0;
     display: flex;
     justify-content: flex-start;
-
 }
 
 .links a {
