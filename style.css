@@ -37,6 +37,10 @@ main {
     height: 100vh;
 }
 
+.content {
+    margin-right: 15%;
+}
+
 /* LOADING-BAR SECTION STYLES */
 /* from https://loading.io/css/ */
 
@@ -151,7 +155,6 @@ main {
 /* CONTENT SECTION STYLES */
 /* title content styles */
 .title {
-    margin-right: 200px;
     padding: 20px;
 }
 
@@ -161,7 +164,6 @@ main {
 
 .title h2 {
     padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .title h1 span a {
@@ -174,8 +176,8 @@ main {
 
 /* links content styles */
 .links {
-    margin-right: 200px;
     padding: 0px 20px 20px 0;
+    font-size: 16px;
     display: flex;
     justify-content: flex-start;
 }
@@ -184,4 +186,53 @@ main {
     padding: 0 20px;
     text-decoration: none;
     color: var(--primary-color)
+}
+
+/* media queries for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    /* decrease the left-offset of the content */
+    .content {
+        margin-right: 5%;
+    }
+}
+
+/* media queries for tablets and smaller */
+@media screen and (max-width: 768px) {
+    /* remove the left-offset of the content */
+    .content {
+        margin: 0;
+    }
+    /* decrease the font sizes */
+    .title h1 {
+        font-size: 28px;
+    } 
+
+    .title h2 {
+        font-size: 23px;
+    }
+
+    .links {
+        font-size: 16px;
+    }
+}
+
+/* media  queries for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+    /* place the loading bar above the content */
+    main {
+        flex-direction: column;
+    }
+
+    /* slightly reduce font size */
+    .title h1 {
+        font-size: 26px;
+    } 
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .links {
+        font-size: 14px;
+    }
 }
