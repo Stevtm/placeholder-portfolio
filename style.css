@@ -218,9 +218,11 @@ main {
 
 /* media  queries for mobile phones and smaller */
 @media screen and (max-width: 575px) {
-    /* place the loading bar above the content */
+    /* place the loading bar above the content & fix screen height issue*/
     main {
         flex-direction: column;
+        height: 100%;
+        margin-top: 40%;
     }
 
     /* slightly reduce font size */
