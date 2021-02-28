@@ -1,33 +1,47 @@
-/* GENERAL PAGE STYLES */
+/* ----- general page styles ----- */
+
 :root {
+    /* define color variables */
     --primary-color: #627a56;
     --secondary-color: #5c567a;
 }
 
 * {
+    /* box model */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
+    /* typography */
     font-family: "Roboto", sans-serif;
 }
 
 html {
+    /* visual decorations */
     background-color: #Faf8f2;
 }
 
 .hovered {
+    /* typography */
     color: var(--primary-color);
+
+    /* visual decorations */
     transition: color 0.5s;
 }
 
-.hovered:hover {
-    color: var(--secondary-color);
-    cursor: pointer;
-    transition: color 0.5s;
-}
+    .hovered:hover {
+        /* typography */
+        color: var(--secondary-color);
 
-/* MAIN CONTENT STYLES */
+        /* visual decorations */
+        cursor: pointer;
+        transition: color 0.5s;
+    }
+
+/* ----- main content styles ----- */
+
 main {
+    /* box model */
     display: flex;
     flex: 30%;
     flex-direction: row;
@@ -38,110 +52,132 @@ main {
 }
 
 .content {
+    /* box model */
     margin-right: 15%;
 }
 
-/* LOADING-BAR SECTION STYLES */
+/* ----- loading bar styles ----- */
 /* from https://loading.io/css/ */
 
 .lds-roller {
+    /* box model */
     display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
-    /* margin-bottom: 20px; */
     margin-right: 20px;
+
+    /* visual decorations */
     animation-delay: 1s;
 }
 
-.lds-roller div {
-    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    transform-origin: 40px 40px;
+    .lds-roller div {
+        /* visual decorations */
+        animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        transform-origin: 40px 40px;
 }
 
-.lds-roller div:after {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    margin: -4px 0 0 -4px;
-}
+        .lds-roller div:after {
+            /* box model */
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin: -4px 0 0 -4px;
 
-.lds-roller div:nth-child(1) {
-    animation-delay: -0.036s;
-}
+            /* visual decorations */
+            background: var(--primary-color);
+        }
 
-.lds-roller div:nth-child(1):after {
-    top: 63px;
-    left: 63px;
-}
+        .lds-roller div:nth-child(1) {
+            /* visual decorations */
+            animation-delay: -0.036s;
+        }
 
-.lds-roller div:nth-child(2) {
-    animation-delay: -0.072s;
-}
+            .lds-roller div:nth-child(1):after {
+                /* box model */
+                top: 63px;
+                left: 63px;
+            }
 
-.lds-roller div:nth-child(2):after {
-    top: 68px;
-    left: 56px;
-}
+        .lds-roller div:nth-child(2) {
+            /* visual decorations */
+            animation-delay: -0.072s;
+        }
 
-.lds-roller div:nth-child(3) {
-    animation-delay: -0.108s;
-}
+            .lds-roller div:nth-child(2):after {
+                /* box model */
+                top: 68px;
+                left: 56px;
+            }
 
-.lds-roller div:nth-child(3):after {
-    top: 71px;
-    left: 48px;
-}
+        .lds-roller div:nth-child(3) {
+            /* visual decorations */
+            animation-delay: -0.108s;
+        }
 
-.lds-roller div:nth-child(4) {
-    animation-delay: -0.144s;
-}
+            .lds-roller div:nth-child(3):after {
+                /* box model */
+                top: 71px;
+                left: 48px;
+            }
 
-.lds-roller div:nth-child(4):after {
-    top: 72px;
-    left: 40px;
-}
+        .lds-roller div:nth-child(4) {
+            /* visual decorations */
+            animation-delay: -0.144s;
+        }
 
-.lds-roller div:nth-child(5) {
-    animation-delay: -0.18s;
-}
+            .lds-roller div:nth-child(4):after {
+                /* box model */
+                top: 72px;
+                left: 40px;
+            }
 
-.lds-roller div:nth-child(5):after {
-    top: 71px;
-    left: 32px;
-}
+        .lds-roller div:nth-child(5) {
+            /* visual decorations */
+            animation-delay: -0.18s;
+        }
 
-.lds-roller div:nth-child(6) {
-    animation-delay: -0.216s;
-}
+            .lds-roller div:nth-child(5):after {
+                /* box model */
+                top: 71px;
+                left: 32px;
+            }
 
-.lds-roller div:nth-child(6):after {
-    top: 68px;
-    left: 24px;
-}
+        .lds-roller div:nth-child(6) {
+            /* visual decorations */
+            animation-delay: -0.216s;
+        }
 
-.lds-roller div:nth-child(7) {
-    animation-delay: -0.252s;
-}
+            .lds-roller div:nth-child(6):after {
+                /* box model */
+                top: 68px;
+                left: 24px;
+            }
 
-.lds-roller div:nth-child(7):after {
-    top: 63px;
-    left: 17px;
-}
+        .lds-roller div:nth-child(7) {
+            /* visual decorations */
+            animation-delay: -0.252s;
+        }
 
-.lds-roller div:nth-child(8) {
-    animation-delay: -0.288s;
-}
+            .lds-roller div:nth-child(7):after {
+                /* box model */
+                top: 63px;
+                left: 17px;
+            }
 
-.lds-roller div:nth-child(8):after {
-    top: 56px;
-    left: 12px;
+        .lds-roller div:nth-child(8) {
+            /* visual decorations */
+            animation-delay: -0.288s;
+        }
 
-}
+            .lds-roller div:nth-child(8):after {
+                /* box model */
+                top: 56px;
+                left: 12px;
+            }
 
 @keyframes lds-roller {
     0% {
@@ -152,89 +188,113 @@ main {
     }
 }  
 
-/* CONTENT SECTION STYLES */
+/* ----- content section styles ----- */
+
 /* title content styles */
+
 .title {
+    /* box model */
     padding: 20px;
 }
 
-.title h1 {
-    font-size: 35px;
-}
+    .title h1 {
+        /* typography */
+        font-size: 35px;
+    }
 
-.title h2 {
-    padding-top: 10px;
-}
+    .title h2 {
+        /* box model */
+        padding-top: 10px;
+    }
 
-.title h1 span a {
-    text-decoration: none;
-}
-
-.title h2 span a {
-    text-decoration: none;
-}
+    .title a {
+        /* typography */
+        text-decoration: none;
+    }
 
 /* links content styles */
+
 .links {
+    /* box model */
     padding: 0px 20px 20px 0;
-    font-size: 16px;
     display: flex;
     justify-content: flex-start;
+
+    /* typography */
+    font-size: 16px;
 }
 
-.links a {
-    padding: 0 20px;
-    text-decoration: none;
-    color: var(--primary-color)
-}
+    .links a {
+        /* box model */
+        padding: 0 20px;
+
+        /* typography */
+        text-decoration: none;
+        color: var(--primary-color)
+    }
+
+/* ----- media queries for responsive design ----- */
 
 /* media queries for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
+
     /* decrease the left-offset of the content */
     .content {
+        /* box-model */
         margin-right: 5%;
     }
 }
 
 /* media queries for tablets and smaller */
 @media screen and (max-width: 768px) {
+
     /* remove the left-offset of the content */
     .content {
+        /* box model */
         margin: 0;
     }
+
     /* decrease the font sizes */
     .title h1 {
+        /* typography */
         font-size: 28px;
     } 
 
     .title h2 {
+        /* typography */
         font-size: 23px;
     }
 
     .links {
+        /* typography */
         font-size: 16px;
     }
 }
 
 /* media  queries for mobile phones and smaller */
 @media screen and (max-width: 575px) {
+
     /* place the loading bar above the content & fix screen height issue*/
     main {
+        /* box-model */
         flex-direction: column;
         height: 100%;
         margin-top: 40%;
     }
 
-    /* slightly reduce font size */
+    /* slightly reduce font sizes */
     .title h1 {
+        /* typography */
         font-size: 26px;
     } 
 
     .title h2 {
+        /* typography */
         font-size: 20px;
     }
 
     .links {
+        /* typography */
         font-size: 14px;
     }
 }
